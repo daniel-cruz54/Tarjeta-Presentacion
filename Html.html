@@ -3,57 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Tarjeta Profesional</title>
 </head>
 <body>
-    <header>
-        <h1>Daniel Santiago Quintana Cruz</h1>
-        <h2>Estudiante de Plataformas Tecnologicas y aplicaciones</h2>
-        <img src="Img/FotoDoc.jpg" alt="Imagen-Daniel_Cruz" width="200">
+    <nav class="nav">
+        <ul>
+            <li><a href="#perfil">Perfil Profesional</a></li>
+            <li><a href="#habilidades">Proyectos</a></li>
+            <li><a href="#formacion">Formación y Experiencia</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <header class="info">
+        <div class="info-container">
+
+            <div class="foto">
+                <img src="Img/FotoDoc.jpg" alt="Foto de Perfil">
+            </div>
+            <div class="datos">
+                <h1>Daniel Cruz</h1>
+                <h2>Técnico en Plataformas Tecnológicas y Aplicaciones</h2>
+                <h3>Perfil Profesional</h3>
+                <p>Soy un estudiante del área tecnologica con interes en el desarrollo web y soluciónes técnologicas.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos temporibus beatae sunt nihil voluptatum natus cumque nulla adipisci velit ducimus hic deleniti inventore cupiditate sapiente perspiciatis numquam, molestiae minima dolor!
+                </p>
+            </div>
+
+
+        </div>
+        
+        
     </header>
 
     <main>
-        <section>
-            <h2>Perfil Profesional</h2>
-            <p>
-                Soy un estudiante del área tecnologica con interes en el desarrollo web y soluciónes técnologicas.
-            </p>
+       
+
+        <section class="skills">
+            <div class="technical-skills">
+                <h2>Habilidades <br>Técnicas</br></h2>
+                <ul>
+                    <li>Soporte Técnico</li>
+                    <li>Diagnostico y solución de indcidentes</li>
+                    <li>Instalación y configuración de Software</li>
+                 <li>Mantenimiento Preventivo y Correctivo</li>
+                    <li>Soporte al usuario final</li>
+                    <li>Gestión de Tickets</li>
+                </ul>
+            </div>
+
+            <div class="soft-skills">
+                <h2>Habilidades <br>Blandas<br></h2>
+                <ul>
+                    <li>Comunicación efectiva</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Pensamiento crítico</li>
+                    <li>Resolución de problemas</li>
+                    <li>Adaptabilidad</li>
+                    <li>Aprendizaje continuo</li>
+                </ul>
+            </div>
+            
         </section>
 
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Soporte Técnico</li>
-                <li>Instalación de Software</li>
-                <li>Manejo de Herramientas digitales</li>
-            </ul>
-        </section>
-
-        <section>
+        <section class="experience">
             <h2>Formación y Experiencia</h2>
 
-            <article>
-                <h3>Formación Academica</h3>
-                <p>
-                    <strong>Instituto I3</strong> - Técnico en Plataformas técnologicas y aplicaciones
-                </p>
-            </article>
+            <div class="experience-container">
+                <div class="academic">
+                    <h3>Formación Academica</h3>
 
-            <article>
-                <h3> Experiencia</h3>
-                <p>
-                    Agente Mesa de Ayuda N1 - Indra
-                </p>
-            </article>
+                    <details>
+                        <summary>Técnico en Plataformas Tecnológicas y Aplicaciones</summary>
+                        <p><strong>Instituto I3</strong> - Bogotá D.C - Colombia</p>
+                        <p>Enfoque en Soporte Técnico y desarrollo Básico</p>
+                 </details>
+             </div>
+
+             <div class="work">
+                    <h3>Experiencia Laboral</h3>
+
+                    <details>
+                     <summary>Agente Mesa de Ayuda N1 - 2025</summary>
+                        <p><strong>Indra</strong> - Bogotá D.C - Colombia</p>
+                        <p>Soporte técnico a usuarios finales en entornos de software empresarial.</p>
+                    </details>
+
+                </div>
+
+            </div>
+
+            
         </section>
 
     </main>
 
-    <footer>
-        <p><strong>Correo</strong> :danielcruzimp@gmail.com</p>
-        <p><strong>Ubicación</strong>Bogota D.C - Colombia</p>
-        <p><strong>2025</strong></p>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <a href="https://www.facebook.com/danielsantiago.quintanacruz/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/danielsan_cruz/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-santiago-quintana-cruz/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/daniel-cruz54"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="footer-center">
+                <p>&copy; 2026 Daniel Cruz. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-right">
+                <p><i class="fa-solid fa-envelope"></i> danielcruzimp@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bogotá D.C - Colombia</p>
+            </div>
+
+        </div>
+
     </footer>
+        
     
 </body>
 </html>
