@@ -12,6 +12,10 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav ul {
@@ -222,6 +226,72 @@ details p {
     text-align: center;
 }
 
+
+.contact {
+    background-color: #1e2a3a;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 35px;
+    color: #dddddb;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    border-left: 6px solid #364b66;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background-color: #cfcfcf;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 10px #d8d2b4;
+}
+
+.contact-form button {
+    background-color: #d8d2b4;
+    color: #0f1b2d;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #bbb59b;
+    color: #ffffff;
+}
+
+
+
+
+
 .footer {
     background-color: #0f1b2d;
     padding: 30px 0;
@@ -263,4 +333,104 @@ details p {
 
 .footer-right {
   text-align: right;
+}
+
+/* Media Queries para móviles */
+@media screen and (max-width: 768px) {
+    
+    
+   @media screen and (max-width: 768px) {
+    .nav {
+        height: auto; 
+        padding: 10px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav li {
+        padding: 5px 0; 
+    }
+
+    .nav a {
+        font-size: 16px; 
+    }
+}
+    
+    .info-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .foto img {
+        width: 200px;
+        height: auto;
+    }
+
+    .datos h1 {
+        font-size: 28px;
+    }
+    .datos h2 {
+        font-size: 18px;
+    }
+    .datos h3 {
+        font-size: 16px;
+    }
+    .datos p {
+        font-size: 14px;
+    }
+
+    
+    .skills {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 10px;
+    }
+    .technical-skills,
+    .soft-skills {
+        width: 90%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    
+    .experience-container {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
+    .academic,
+    .work {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .experience h2 {
+        font-size: 28px;
+        padding: 30px 0;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        position: relative; 
+    }
+
+    .footer-center {
+        position: relative; 
+        left: 0;
+        transform: none;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+    }
 }
